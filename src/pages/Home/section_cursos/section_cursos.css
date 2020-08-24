@@ -1,0 +1,154 @@
+.section_cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-background) !important;
+}
+
+.section_cursos .name_section {
+    color: var(--color-title-in-white);
+    padding-bottom: 3rem;
+}
+
+.section_cursos .name_section h1 {
+    font: 700 3rem Archivo;
+}
+
+.section_cursos .name_section::after, .name_section::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #00BFFF;
+}
+
+.section_cursos .container_cursos {
+    position: relative;
+    background-color: #4F4F4F;
+    height: 70%;
+    width: 96%;
+    border: solid 10px #1c1c1c;
+}
+
+.section_cursos .container_cursos .slide_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.section_cursos .container_cursos .slide_img .slide_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+.section_cursos .container_cursos .slide_img .slide_content img {
+    width: 100%;
+    height: 40%;    
+}
+
+.section_cursos .container_cursos .slide_img .slide_content p {
+    font-family: Ubunto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.slide_content p h1 {
+    color: black;
+    padding-top: 1rem;
+    font: 700 2.4rem Archivo;
+}
+
+.slide_content p h5 {
+    text-align: center;
+    color: #00CED1;
+    width: 100%;
+    height: 60%;
+}
+
+.section_cursos .container_cursos input {
+    display: none;
+}
+
+.pre, .nxt {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background-color: whitesmoke;
+    z-index: 99;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.slide_img label:hover {
+    opacity: 0.6;
+}
+
+.pre {
+    left: 0;
+}
+
+.nxt {
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+}
+
+.dotsin {
+    width: 100%;
+    height: 11px;
+    bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dotsin .dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0,.6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dotsin .dots:hover {
+    background-color: white;
+}
+
+.slide_img {
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three {
+    z-index: 9;
+}
+
+#i1:checked ~ .dotsin #dot1,
+#i2:checked ~ .dotsin #dot2,
+#i3:checked ~ .dotsin #dot3 {
+    background: #ffffff;
+    border: solid 2px black;
+}
+

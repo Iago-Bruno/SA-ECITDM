@@ -1,0 +1,35 @@
+@media (min-width: 1100px) {
+    .section_home .menu_home {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .section_home .menu_home #home_img {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .section_home .menu_home p {
+        text-align: end;
+        padding: 5rem 0rem 3rem 4.3rem;
+    }
+
+    .section_home .menu_home p h1 {
+        width: 100%;
+        overflow: ;
+        text-align: start;
+    }
+
+    .section_home .menu_home p h5 {
+        text-align: start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .section_home .menu_home img {
+        padding-right: 2rem;
+        width: 90%;
+        height: 80%;
+    }
+}

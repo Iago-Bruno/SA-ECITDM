@@ -1,0 +1,24 @@
+:root{
+    --color-background: #F0F0F7;
+    --color-primary: #8257E5;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-title-in-white: #4B0082;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url(../fotos//background_ecit.svg);
+}

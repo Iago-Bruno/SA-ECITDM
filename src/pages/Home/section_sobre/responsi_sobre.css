@@ -1,0 +1,29 @@
+@media (min-width: 790px) {
+    .section_sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;   
+    }
+
+    .section_sobre #sobre_img {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .section_sobre #sobre_img img {
+        width: auto;
+        height: 100%;
+    }
+
+    .section_sobre #sobre_texts {
+        padding: 4rem 2rem 0 2rem;
+    }
+
+    .section_sobre #sobre_texts .textos h6 {
+        padding: 0;
+    }
+}

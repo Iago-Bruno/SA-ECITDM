@@ -1,0 +1,133 @@
+.navbar_home {
+    width: 100%;
+    height: 14vh;
+    background-color: #00008B !important;
+    position: fixed;
+}
+
+.navbar_home .container_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar_home .container_logo .navbar_logo {
+    height: 100%;
+    margin-left: 1rem;
+}
+
+.navbar_home .container_logo .navbar_logo a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+}
+
+.navbar_home .container_logo .navbar_logo a img {
+    width: 76px;
+    height: 76px;
+}
+
+.navbar_home .container_logo .navbar_logo a p {
+    font-family: ubunto;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0.4rem 0 0 0.4rem;
+}
+
+.navbar_home .container_logo .navbar_logo a p h1 {
+    font-size: 1.6rem;
+}
+
+.navbar_home .container_logo .navbar_logo a p h4 {
+    margin-top: -8px;
+    font-size: 1.2rem;
+}
+
+.navbar_home .nav_links {
+    height: 100%;
+    width: 12%;
+}
+
+.navbar_home .nav_links label {
+    position: absolute;
+    z-index: 1;
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_home .nav_links #logomenu {
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.navbar_home .nav_links input {
+    display: none;
+}
+
+.navbar_home .nav_links input:checked ~ .links {
+    transform: translateX(100rem);
+}
+
+.navbar_home .nav_links nav {
+    transition: all 0.6s linear;
+    margin-top: 89px;
+    right: 0rem;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 18rem;
+}
+
+.navbar_home .nav_links nav ul {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar_home .nav_links nav ul a {
+    font-family: Ubunto;
+    font-size: 1.8rem;
+    display: block;
+    padding: 1.6rem 1rem;
+    color: #f4f4f9;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.navbar_home .nav_links nav li {
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #222;
+}
+
+.navbar_home .nav_links nav ul li #link_login {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_home .nav_links nav ul li #link_login svg {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.4rem;
+}
+
+.navbar_home .nav_links nav li:hover {
+    background-color: #494950;
+}
+
